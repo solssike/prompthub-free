@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptHub | 精选爆款提示词商店</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <header>
+        <nav class="container">
+            <div class="logo">🚀 PromptHub<span>Free</span></div>
+            <div class="nav-links">
+                <a href="#" class="active">探索市场</a>
+                <a href="dashboard.html">我的已购</a>
+                <a href="pay.html" class="btn-vip">开通永久VIP</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>让 AI 真正为你所用</h1>
+            <p>复制即用的高价值 Prompt，助力小红书爆款、电商增效、职场通关</p>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="搜索关键词，如 '小红书', 'Midjourney'...">
+                <button onclick="searchPrompts()"><i class="fas fa-search"></i></button>
+            </div>
+        </section>
+
+        <section class="categories">
+            <button class="cat-btn active" data-cat="all">全部</button>
+            <button class="cat-btn" data-cat="xiaohongshu">小红书</button>
+            <button class="cat-btn" data-cat="midjourney">绘图/MJ</button>
+            <button class="cat-btn" data-cat="ecommerce">电商商业</button>
+            <button class="cat-btn" data-cat="career">职场求职</button>
+        </section>
+
+        <div class="prompt-grid" id="promptGrid">
+            <!-- 提示词卡片将通过 JS 渲染 -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PromptHub. 让知识更便捷地流转。</p>
+    </footer>
+
+    <script src="js/firebase-config.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
