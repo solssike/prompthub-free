@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的已购 - PromptHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .dashboard-container { margin-top: 50px; }
+        .empty-state { text-align: center; padding: 100px 20px; color: var(--text-dim); }
+        .empty-state i { font-size: 4rem; margin-bottom: 20px; opacity: 0.3; }
+        .back-link { margin-bottom: 20px; display: inline-block; color: var(--primary); text-decoration: none; }
+    </style>
+</head>
+<body class="dark-theme">
+    <header>
+        <nav class="container">
+            <div class="logo">🚀 PromptHub<span>Dashboard</span></div>
+            <div class="nav-links">
+                <a href="index.html">返回市场</a>
+                <a href="pay.html" class="btn-vip">升级永久VIP</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container dashboard-container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> 返回首页</a>
+        <h2>我的已购资源</h2>
+        
+        <div id="purchasedList">
+            <!-- 初始状态：显示空白 -->
+            <div class="empty-state">
+                <i class="fas fa-folder-open"></i>
+                <p>您还没有购买任何提示词，或者订单正在审核中...</p>
+                <p style="font-size: 0.8rem; margin-top: 10px;">支付成功后，联系客服手动开通权限即可在此显示。</p>
+                <br>
+                <a href="index.html" class="buy-btn" style="padding: 10px 30px;">去挑选</a>
+            </div>
+        </div>
+    </main>
+
+    <footer style="margin-top: 100px;">
+        <p>&copy; 2024 PromptHub. 您的私密提示词保险箱。</p>
+    </footer>
+</body>
+</html>
